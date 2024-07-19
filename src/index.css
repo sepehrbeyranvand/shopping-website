@@ -13,3 +13,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.bg_gradient{
+  background: linear-gradient(184deg, rgba(255,235,242,1) 40%, rgba(255,255,255,1) 100%);
+}

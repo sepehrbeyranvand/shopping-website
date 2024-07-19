@@ -2,14 +2,14 @@ import headerImg from "../Assets/hero_image.png";
 export default function Home() {
   return (
     <div>
-      <header className="min-h-[48vw] bg-rose-50 w-full flex justify-between">
+      <header className="min-h-[48vw] bg_gradient w-full flex items-center justify-between">
         <div className="basis-1/2 flex flex-col justify-center items-start ms-20">
           <p className="text-zinc-600 mt-7">New Arrivals Only</p>
           <h1 className="text-[4rem] w-[70%] font-bold mt-7">
-            The Best Collections Fo the Bests
+            The Best Collections For the Bests
           </h1>
 
-          <button className="w-[30%] rounded-full p-[.6rem] text-white bg-rose-800 mt-7">
+          <button className="w-[30%] rounded-full p-[.6rem] text-white bg-[#fc3505] hover:bg-[#fc1505] transition-all .4s ease-in-out duration-200 mt-7">
             Latest Collections
           </button>
         </div>
