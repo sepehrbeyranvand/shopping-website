@@ -16,15 +16,25 @@ export default function Popular() {
 
       <div className="flex justify-center gap-3">
         {popularItems.map((e, i) => [
-          <div key={i}>
+          <div className="flex flex-col" key={i}>
             <div className="relative">
-              <img width={280} height={280} src={e.image} alt={e.name} />
-              <i className="fa fa-heart absolute p-2 text-xl text-red-400 hover:text-red-500 transition-all .4s ease-in-out duration-200 cursor-pointer left-1 text-[3.4rem] border border-1 border-red-400 top-1 rounded-full"></i>
+              <img className="rounded-t-md" width={280} height={280} src={e.image} alt={e.name} />
+              <i className="fa fa-heart absolute p-2 text-xl text-red-400 hover:text-red-500 transition-all .4s ease-in-out duration-300 cursor-pointer left-1 text-[3.4rem] border border-1 border-red-400 top-1 rounded-full"></i>
+              <i className="fa fa-shopping-cart absolute p-2 text-xl top-14 text-slate-600 hover:text-slate-500 transition-all .4s ease-in-out duration-300 cursor-pointer left-1 text-[3.4rem] border border-1 border-slate-400 rounded-full"></i>
             </div>
-            <div>
-              <p>{e.new_price}</p>
-              <p className="line-through">{e.old_price}</p>
-              <button onClick={console.log(e.image)}>CLG</button>
+            <div className="w-full leading-7 border border-1 border-e-slate-400 border-s-slate-400 border-b-slate-400 p-1 rounded-b-lg">
+              <h3 className="text-xl font-semibold">{e.name}</h3>
+              <div className="flex justify-between mb-1 mt-1">
+                <p className="font-semibold text-lg">
+                  {e.new_price} <i className="fa fa-dollar"></i>
+                </p>
+                <p className="line-through font-light">
+                  {e.old_price} <i className="fa fa-dollar font-light"></i>
+                </p>
+              </div>
+              <p>
+                {e.rate} <i className="fa fa-star text-yellow-500"></i>
+              </p>
             </div>
           </div>,
         ])}
