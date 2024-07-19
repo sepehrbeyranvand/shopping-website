@@ -1,4 +1,5 @@
 import headerImg from "../Assets/hero_image.png";
+import Popular from "./popular";
 export default function Home() {
   return (
     <div>
@@ -23,6 +24,9 @@ export default function Home() {
           />
         </div>
       </header>
+      <div>
+        <Popular/>
+      </div>
     </div>
   );
 }
