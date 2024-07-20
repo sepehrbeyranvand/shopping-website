@@ -4,6 +4,7 @@ import Footer from "./footer";
 import GetOffer from "./getOffer";
 import NewCollections from "./NewCollections";
 import Popular from "./popular";
+import SliderBrand from "./slider";
 export default function Home() {
   return (
     <div>
@@ -39,6 +40,10 @@ export default function Home() {
       </div>
       <div className="mt-[12rem]">
         <GetOffer/>
+      </div>
+      <div className="mt-[12rem]">
+        <h1 className="text-3xl Pptext text-center p-3 mb-16">Brands</h1>
+        <SliderBrand/>
       </div>
       <div className="mt-[12rem]">
         <Footer/>
