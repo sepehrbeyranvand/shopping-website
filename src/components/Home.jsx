@@ -1,5 +1,6 @@
 import headerImg from "../Assets/hero_image.png";
 import Exclusive from "./exclusive";
+import GetOffer from "./getOffer";
 import NewCollections from "./NewCollections";
 import Popular from "./popular";
 export default function Home() {
@@ -34,6 +35,9 @@ export default function Home() {
       </div>
       <div>
         <NewCollections/>
+      </div>
+      <div className="mt-[12rem]">
+        <GetOffer/>
       </div>
     </div>
   );

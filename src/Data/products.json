@@ -1,33 +1,33 @@
 {
-    "popular":[
-  {
-    "id":1,
-    "rate":4.2,
-    "name":"Striped",
-    "image":"../Assets/product_1.png",
-    "new_price":50.00,
-    "old_price":80.50
-  },
-  {"id":2,
-    "name":"Flutter",
-    "rate":4.6,
-    "image":"../Assets/product_2.png",
-    "new_price":85.00,
-    "old_price":120.50
-  },
-  {"id":3,
-  "rate":4.1,
-    "name":"Sleeve Overlap",
-    "image":"../Assets/product_3.png",
-    "new_price":60.00,
-    "old_price":100.50
-  },
-  {"id":4,
-  "rate":4.7,
-    "name":"Collar Peplum Blouse",
-    "image":"../Assets/product_4.png",
-    "new_price":100.00,
-    "old_price":150.00
+      "popular":[
+    {
+      "id":1,
+      "rate":4.2,
+      "name":"Striped",
+      "image":"../Assets/product_1.png",
+      "new_price":50.00,
+      "old_price":80.50
+    },
+    {"id":2,
+      "name":"Flutter",
+      "rate":4.6,
+      "image":"../Assets/product_2.png",
+      "new_price":85.00,
+      "old_price":120.50
+    },
+    {"id":3,
+    "rate":4.1,
+      "name":"Sleeve Overlap",
+      "image":"../Assets/product_3.png",
+      "new_price":60.00,
+      "old_price":100.50
+    },
+    {"id":4,
+    "rate":4.7,
+      "name":"Collar Peplum Blouse",
+      "image":"../Assets/product_4.png",
+      "new_price":100.00,
+      "old_price":150.00
+    }
+      ]
   }
-    ]
-}

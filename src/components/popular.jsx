@@ -10,6 +10,7 @@ export default function Popular() {
       .then((response) => response.json())
       .then((json) => setPopularItems(json));
   }, [url]);
+
   return (
     <div>
       <h1 className="text-3xl Pptext text-center p-3 mb-16">POPULAR IN WOMEN</h1>
