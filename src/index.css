@@ -16,6 +16,31 @@ code {
 .bg_gradient{
   background: linear-gradient(184deg, rgba(255,235,242,1) 40%, rgba(255,255,255,1) 100%);
 }
+.exclusive{
+  background: linear-gradient(184deg, rgb(253, 228, 237) 20%, rgba(255,255,255,1) 100%);
+}
 .fa-heart,.fa-shopping-cart{
   font-size: 1.4rem !important;
+}
+.Pptext,.Nctext{
+  position: relative;
+  display: block;
+}
+.Pptext::before{
+  content: '';
+  position: absolute;
+  background-color: pink;
+  padding: 1px;
+  width: 3%;
+  left: 80;
+  bottom: 0;
+}
+.Nctext::before{
+  content: '';
+  position: absolute;
+  background-color: rgb(122, 106, 249);
+  padding: 1px;
+  width: 3%;
+  left: 80;
+  bottom: 0;
 }

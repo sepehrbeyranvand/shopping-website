@@ -1,4 +1,6 @@
 import headerImg from "../Assets/hero_image.png";
+import Exclusive from "./exclusive";
+import NewCollections from "./NewCollections";
 import Popular from "./popular";
 export default function Home() {
   return (
@@ -26,6 +28,12 @@ export default function Home() {
       </header>
       <div>
         <Popular/>
+      </div>
+      <div className="mt-[9rem]">
+        <Exclusive/>
+      </div>
+      <div>
+        <NewCollections/>
       </div>
     </div>
   );
