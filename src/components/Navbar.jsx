@@ -6,7 +6,7 @@ import {
   Link,
 } from "react-router-dom";
 import "font-awesome/css/font-awesome.min.css";
-import ShoppingBasket from "../Assets/shoppingbasket.png";
+// import ShoppingBasket from "../Assets/shoppingbasket.png";
 
 import Logo from "../Assets/firstLogo.png";
 import Home from "./Home";
@@ -14,7 +14,9 @@ import Shop from "./Shop";
 import Men from "./Men";
 import Women from "./Women";
 import Kids from "./Kids";
+import { useState } from "react";
 export default function Navbar() {
+  const [swtichLight, setSwitchLight] = useState(false);
   return (
     <div>
       <Router>
@@ -54,15 +56,9 @@ export default function Navbar() {
             <button className="me-8 hover:bg-rose-50 hover:border-white transition-all .4s ease-in-out duration-200 p-2 w-[7vw] border border-1 border-zinc-900 rounded-3xl">
               Login
             </button>
-            <div>
-              <img
-                width={35}
-                className="object-contain bg-cover relative"
-                height={30}
-                src={ShoppingBasket}
-                alt="Cart"
-              />
-              <span className="bg-red-600 rounded-full size-2 text-center text-white absolute right-3 top-10"></span>
+            <div className="flex justify-center items-center">
+              {swtichLight && <i onClick={()=>setSwitchLight(!swtichLight)} style={{fontSize:'1.2rem'}} className="fa fa-moon-o"></i>}
+              {!swtichLight && <i onClick={()=>setSwitchLight(!swtichLight)} style={{fontSize:'1.2rem'}} className="fa fa-sun-o"></i>}
             </div>
           </div>
         </nav>
